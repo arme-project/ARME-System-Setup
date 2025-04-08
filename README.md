@@ -23,21 +23,21 @@ Each project is organized into **DEMO** (Instructions to setup a running demo) a
 1. Clone the repo above. 
 1. Run the included executable at `..\BuildOutput\AdaptiveMetronome.exe`.
 1. Load the provided `Haydn2.mid` and set player parameters. 
-1. You should see the following interface:  
-   ![JUCE Plugin UI](images/juce_ui.png)
+1. You should see the following interface: 
+   - **TODO:** Get Screenshot
 
 ### 🔸 DEVELOPMENT
 
-1. Clone the repo as above.
+1. Clone the repo as above. Please note that the full system currently uses the `windows-standalone` branch of the repo.
 1. Clone [JUCE v7.0.9](https://github.com/juce-framework/JUCE/releases/tag/7.0.9).
 1. Navigate to `..\JUCE\extras\Projucer\Builds\VisualStudio2022`
 1. Build `Projucer.sln` using **Visual Studio 2022** or **MSBuild tools**.
 1. Load the included `AdaptiveMetronome.jucer` file in **Projucer**.
 1. You should see something like the following interface:  
-   ![JUCE Plugin UI](images/juce_ui.png)
+   - **TODO:** Get Screenshot
 1. Press export to generate the **VS2022** solution files and navigate to: `..\AdaptiveMetronome\Builds\VisualStudio2022`
 
-1. Use **VS2022** or **MSBuild** to build the generated `AdaptiveMetronome.sln` solution.
+1. Use **VS2022** or **MSBuild** to build the generated `AdaptiveMetronome.sln` solution. 
 
 ---
 
@@ -46,7 +46,7 @@ Each project is organized into **DEMO** (Instructions to setup a running demo) a
 ### 🔹 DEMO
 
 1. Download and install [MAX 9.0](https://cycling74.com/downloads).
-2. Clone the **score-follower** repo and open the `score-follower.maxpat` patcher.
+2. Clone the **score-follower** repo and open the `score-follower.maxpat` patcher. Please note the full system uses the `Fixed-Tapping` branch of the repo. 
 1. This should load the following interface:
   ![JUCE Plugin UI](images/juce_ui.png)
 1. Setup the required audio files in each Audio Player.
@@ -68,9 +68,15 @@ Each project is organized into **DEMO** (Instructions to setup a running demo) a
 
 1. The **MAX/MSP** Score follower must be running for the headset to connect to. 
 1. Install Magic Leap Hub 3 (download from [Magic Leap Hub 3](https://ml2-developer.magicleap.com/downloads)).
-1. Connect **Magic Leap 2** to **PC** via a **USB** cable and select **USB Tethering** as connection style when prompted inside the headset. 
+1. Connect **Magic Leap 2** to **PC** via a **USB** cable and select **USB Tethering** as connection style when prompted inside the headset. Or this can be changed afterwards in `Settings -> Connected Devices -> USB`.
+   <div align="center">
+      <img src="InstructionScreenshots\Set-USB-Tethering-Cropped.jpg" height="300">
+   </div>
 1. Load the **ARME** app on the headset, and click on the **Connections** tab.
-1. Identify and select the connection that corresponds to the **USB** link between **PC** and headset. This should be called **USB CONNECTION** and have an IP Address starting with **...**.
+1. Identify and select the connection that corresponds to the **USB** link between **PC** and headset. This should be called, e.g. `Ethernet - 192.168.42.129 - usb0`. The exact IP address can vary. 
+   <div align="center">
+      <img src="InstructionScreenshots\Headset-Connection-Settings-In-App-Cropped.jpg" height="300">
+   </div>
 1. Clicking **Connect** should start the automatic connection process with the **MAX/MSP** score follower. If this works the menu should change to **Connected**. If this does not work, it will be stuck on **... Connecting** indefinitely. 
 1. Once connected, the headset will respond to reset and play commands automatically. 
 
