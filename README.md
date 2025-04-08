@@ -1,6 +1,7 @@
 # WIP - NOT FINAL OR FULLY CORRECT YET
 - **TODO:** Create screenshots where necessary.
 - **TODO:** Expand instructions for connecting headset via USB link.
+- **TODO:** Expand on MAX/MSP instructions for installing the included Antescofo package. 
 - **TODO:** Edit the MAX/MSP patch with actual presentation UI, and update instructions. 
 
 ---
@@ -9,7 +10,7 @@
 This repository contains three interconnected projects required to **DEMO** or **DEVELOP** the system. 
 
 1. 🎛️ [Adaptive Metronome JUCE Plugin](https://github.com/arme-project/AdaptiveMetronome/tree/windows-standalone) – Standalone Plugin Executable.
-2. 🎚️ [score-follower in MAX/MSP](https://github.com/arme-project/score-follower/tree/Fixed-tapping) – Score Following and Audio Playback
+2. 🎚️ [score-follower in MAX/MSP](https://github.com/arme-project/score-follower) – Score Following and Audio Playback
 3. 🥽 [Magic Leap 2 project in Unity](https://github.com/arme-project/ARME-XR-Integration-ML2) – AR visual interface and display
 
 Each project is organized into **DEMO** (Instructions to setup a running demo) and **DEVELOPMENT** (Instructions for setting up full development environment)
@@ -46,7 +47,9 @@ Each project is organized into **DEMO** (Instructions to setup a running demo) a
 ### 🔹 DEMO
 
 1. Download and install [MAX 9.0](https://cycling74.com/downloads).
-2. Clone the **score-follower** repo and open the `score-follower.maxpat` patcher. Please note the full system uses the `Fixed-Tapping` branch of the repo. 
+1. Clone the **score-follower** repo.
+1. Extract Antescofo package to a folder that MAX/MSP checks for external packages (**Expand these instructions**). 
+1. Open the `score-follower.maxpat` patcher.
 1. This should load the following interface:
   ![JUCE Plugin UI](images/juce_ui.png)
 1. Setup the required audio files in each Audio Player.
