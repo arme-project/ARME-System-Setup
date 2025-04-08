@@ -1,10 +1,16 @@
+# WIP - NOT FINAL OR FULLY CORRECT YET
+- **TODO:** Create screenshots where necessary.
+- **TODO:** Expand instructions for connecting headset via USB link.
+- **TODO:** Edit the MAX/MSP patch with actual presentation UI, and update instructions. 
+
+---
+
 # 🧰 Full ARME-Project Setup Guide
+This repository contains three interconnected projects required to **DEMO** or **DEVELOP** the system. 
 
-This repository contains three interconnected projects:
-
-1. 🎛️ [Adaptive Metronome JUCE Plugin](git@github.com:arme-project/AdaptiveMetronome.git) – Standalone Plugin Executable.
-2. 🎚️ [score-follower in MAX/MSP](git@github.com:arme-project/score-follower.git) – Score Following and Audio Playback
-3. 🥽 [Magic Leap 2 project in Unity](git@github.com:arme-project/ARME-XR-Integration-ML2.git) – AR visual interface and display
+1. 🎛️ [Adaptive Metronome JUCE Plugin](https://github.com/arme-project/AdaptiveMetronome/tree/windows-standalone) – Standalone Plugin Executable.
+2. 🎚️ [score-follower in MAX/MSP](https://github.com/arme-project/score-follower/tree/Fixed-tapping) – Score Following and Audio Playback
+3. 🥽 [Magic Leap 2 project in Unity](https://github.com/arme-project/ARME-XR-Integration-ML2) – AR visual interface and display
 
 Each project is organized into **DEMO** (Instructions to setup a running demo) and **DEVELOPMENT** (Instructions for setting up full development environment)
 
