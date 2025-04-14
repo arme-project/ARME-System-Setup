@@ -5,10 +5,10 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://arme-project.github.io',
-	base: 'am-system-docs',
+	base: 'ARME-System-Setup',
 	integrations: [
 		starlight({
-			title: 'ARME System',
+			title: 'ARME Project System',
 			logo: {
 				src: './src/assets/ARME.png',
 			},
