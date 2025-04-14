@@ -1,3 +1,7 @@
+This repository has an interactive page which you can view the instructions on: https://arme-project.github.io/ARME-System-Setup/
+
+---
+
 # WIP - NOT FINAL OR FULLY CORRECT YET
 - **TODO:** Create screenshots where necessary.
 - **TODO:** Expand instructions for connecting headset via USB link.
