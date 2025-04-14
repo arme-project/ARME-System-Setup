@@ -13,7 +13,7 @@ export default defineConfig({
 				src: './src/assets/ARME.png',
 			},
 			social: {
-				github: 'https://github.com/arme-project/ARME-System-Setup?tab=readme-ov-file',
+				github: 'https://github.com/arme-project',
 			},
 			sidebar: [
 				{
