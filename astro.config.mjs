@@ -13,7 +13,7 @@ export default defineConfig({
 				src: './src/assets/ARME.png',
 			},
 			social: {
-				github: 'https://github.com/arme-project',
+				github: 'https://github.com/arme-project ',
 			},
 			sidebar: [
 				{

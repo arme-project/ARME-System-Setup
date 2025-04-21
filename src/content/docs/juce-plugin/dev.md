@@ -37,9 +37,27 @@ Note: `{location-of-JUCE}` means the location inside the unzipped files of JUCE
 
 ## 3. Open in Visual Studio and finding the code
 
+Once you have Projucer and the Adaptive Metronome opened, it should have Visual Studio already selected at the top of the GUI. Press the symbol for Visual Studio next and it should then export into the IDE for editing:
+
+![Projucer with loaded project](../../../assets/juce-plugin/export_options.jpg)
+
+This should open Visual Studio 2022 and with the exported Solution for the Adaptive Metronome. It will look empty at first but you can look through the Solution Explorer. The important section to look at is where it should say **AdaptiveMetronome** under **AdaptiveMetronome_ShareCode**. You will find all the codebase for the entire project, much like you will see in Projucer.
+
 ## 4. Understanding the codebase
+
+As you can see, there is a collection of C++ and Header Files under the `Source` directory which are responsible for everything that happens in the Adaptive Metronome. You may find documentation at the [Adaptive Metronome Repository](https://github.com/arme-project/AdaptiveMetronome/tree/new_comments) about the different classes and functions you may find.
+
+However, the main one functionality of the Metronome is found under the `EnsembleModel` files. This is where the calculations are run and where we indicate when to play different onsets according the inputs.
+- This is where you will find where Open Sound Control (OSC) is used to communicate with applications outside the Adaptive Metronome.
+
+To make changes to the interface, `PluginEditor` is responsible for generating the layout. As well as `PluginProcessor` handles as the framework of the project to connect the interface with the backend, and accepting MIDI information for the Ensemble.
+
+JUCE is a powerful open source framework for creating Audio Applications and Plugins so there may be better ways to implement some of the things we have put together. I would recommend taking a look at the [documentation](https://docs.juce.com/master/index.html) and some tutorials to get some ideas on how the basic functions related to `PluginEditor` and `PluginProcessor`.
 
 ## 5. Compiling Changes
 
+When you make changes to the project, you can build the project in Visual Studio (`Build > Build Solution`). Both VTS3 and Standalone can be found inside the Build directory where the project is stored in (`.\Builds\VisualStudio2022\x64\Debug`)
+- If you are using a Digital Audio Workstation (DAW) like REAPER, the VST3 file can be found under the `VST3` directory. You may need to define a path for the application to find it.
+- If you are using the Standalone version, you can find the executable file under `Standalone Plugin` called `AdaptiveMetronome`.
 
-
+Every change, you should re-build the solution to ensure that changes do occur in the program. Attaching the program (like REAPER or the Standalone) to Visual Studio (`Debug >  Attach to Process`) while running is a helpful to debug whiles running the solution to identify where errors can potentially occur.
