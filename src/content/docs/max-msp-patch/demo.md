@@ -3,6 +3,7 @@ title: Demonstration Setup
 description: A quick description what the ARME Project system is and how it is used.
 ---
 
+If you are struggling to understand how to work this, then the score-follower offers a more friendly GUI within 'Presentation Mode'. You can find instructions to run this here: [Running through Presentation Mode](./max-msp-patch/demo-presentation-mode)
 ## 1. Clone the repository
 
 Use the following GIT Command if installed:
@@ -45,11 +46,10 @@ You can also set the audio files for the rest of the players on the Ensemble (ne
 
 ## 4. Methods of Onsets
 
-There are currently three different ways to send Onsets to the Adaptive Metronome (running in the background) which you can select from:
+There are currently two different ways of Onsets with the Adaptive Metronome (running in the background) which you can select from:
 
 1. Simulated Onsets - Based on a metronome an Onset is generated automatically periodically (defaulted to 0.5 seconds).
-2. Manual Tapping - Generate enerate onsets when the user taps the Spacebar or through a MIDI device
-3. Antescofo - Score loaded into Antescofo, and pre-recorded audio file or audio from microphone plays into Antescofo
+2. Antescofo - Score loaded into Antescofo, and pre-recorded audio file or audio from microphone plays into Antescofo
 
 ## 5. Playing the Model
 

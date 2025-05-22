@@ -37,7 +37,7 @@ export default defineConfig({
 					items: [
 								{ label: 'Score Follower', slug: 'max-msp-patch/about' },
 								{ label: 'Demonstration Setup', slug: 'max-msp-patch/demo' },
-								// { label: 'Development Setup', slug: 'max-msp-patch/dev' },
+								{ label: 'Demonstration Setup (Presentation Mode)', slug: 'max-msp-patch/demo-presentation-mode' },
 					],
 				},
 
